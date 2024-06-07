@@ -1,0 +1,296 @@
+{
+  "users": [
+    {
+      "id": 752,
+      "name": "Ramaz",
+      "surname": "Borcha",
+      "birthDate": "2023-06-06",
+      "mobile": "598-656",
+      "address": {
+        "city": "Akhmeta",
+        "street": "Gorgasali"
+      },
+      "skills": [
+        "HTML-Edited",
+        "CSS"
+      ],
+      "workExperience": [
+        {
+          "place": "Revenue Service",
+          "position": "Developer Intern",
+          "start": "2023-08-02",
+          "end": "2024-10-24"
+        },
+        {
+          "place": "TBC-updated",
+          "position": "Middle Developer",
+          "start": "2024-05-09",
+          "end": "2025-05-23"
+        }
+      ]
+    },
+    {
+      "id": 490,
+      "name": "aasada",
+      "surname": "dasdaf",
+      "birthDate": "2024-04-02",
+      "mobile": "232-756",
+      "address": {
+        "city": "dssdsd",
+        "street": "sdsdsad"
+      },
+      "skills": [
+        "sddsd",
+        "dsddd"
+      ],
+      "workExperience": [
+        {
+          "place": "dsdas",
+          "position": "Junior Developer",
+          "start": "2024-04-09",
+          "end": "2024-04-09"
+        }
+      ]
+    },
+    {
+      "id": 671,
+      "name": "dfsfgfdf",
+      "surname": "gfdgdggh",
+      "birthDate": "2024-04-02",
+      "mobile": "343-565",
+      "address": {
+        "city": "fdfsfd",
+        "street": "jhhhgf"
+      },
+      "skills": [
+        "efdf",
+        "fdfs"
+      ],
+      "workExperience": [
+        {
+          "place": "fdsfsf",
+          "position": "Junior Developer",
+          "start": "2024-04-16",
+          "end": "2024-04-09"
+        },
+        {
+          "place": "dsfdfds",
+          "position": "Middle Developer",
+          "start": "2024-04-09",
+          "end": "2024-04-26"
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "name": "sasas",
+      "surname": "saSSSfg",
+      "birthDate": "2024-04-01",
+      "mobile": "212-454",
+      "address": {
+        "city": "SDDSDAS",
+        "street": "DSDASD"
+      },
+      "skills": [
+        "DSD",
+        "DSAD"
+      ],
+      "workExperience": [
+        {
+          "place": "DSADSD",
+          "position": "Developer Intern",
+          "start": "2024-04-08",
+          "end": "2024-04-16"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "ASAbg",
+      "surname": "asSghhh",
+      "birthDate": "2024-04-08",
+      "mobile": "212-434",
+      "address": {
+        "city": "asasas",
+        "street": "asasas"
+      },
+      "skills": [
+        "asaas",
+        "asss"
+      ],
+      "workExperience": [
+        {
+          "place": "asASS",
+          "position": "Developer Intern",
+          "start": "2024-04-09",
+          "end": "2024-04-09"
+        }
+      ]
+    },
+    {
+      "id": 874,
+      "name": "Sfddf",
+      "surname": "ASASbvb",
+      "birthDate": "2024-04-01",
+      "mobile": "121-355",
+      "address": {
+        "city": "vbg",
+        "street": "SDSDS"
+      },
+      "skills": [
+        "DSDDS"
+      ],
+      "workExperience": [
+        {
+          "place": "DSDSAD",
+          "position": "Middle Developer",
+          "start": "2024-04-15",
+          "end": "2024-04-02"
+        }
+      ]
+    },
+    {
+      "id": 329,
+      "name": "FGFGUpdated",
+      "surname": "GFGFdff",
+      "birthDate": "2024-04-08",
+      "mobile": "323-546",
+      "address": {
+        "city": "FDFDF",
+        "street": "FDDF"
+      },
+      "skills": [
+        "FDFf",
+        "ddsdd",
+        "dsdd"
+      ],
+      "workExperience": [
+        {
+          "place": "dsds",
+          "position": "Junior Developer",
+          "start": "2024-04-11",
+          "end": "2024-04-03"
+        },
+        {
+          "place": "dsdsd",
+          "position": "Developer Intern",
+          "start": "2024-04-16",
+          "end": "2024-04-25"
+        }
+      ]
+    },
+    {
+      "id": 670,
+      "name": "qwwhhj",
+      "surname": "sasajhj",
+      "birthDate": "2024-04-01",
+      "mobile": "233-767",
+      "address": {
+        "city": "sdsd",
+        "street": "sdsd"
+      },
+      "skills": [
+        "dsd",
+        "dsds"
+      ],
+      "workExperience": [
+        {
+          "place": "dsds",
+          "position": "Middle Developer",
+          "start": "2024-04-09",
+          "end": "2024-04-26"
+        },
+        {
+          "place": "esdd",
+          "position": "Senior Developer",
+          "start": "2024-04-11",
+          "end": "2024-06-27"
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "name": "ddxcgfg",
+      "surname": "xcxcgfg",
+      "birthDate": "2024-04-10",
+      "mobile": "322-344",
+      "address": {
+        "city": "vvvvvvvc",
+        "street": "cvcvcv"
+      },
+      "skills": [
+        "cccv",
+        "vcvv",
+        "vcvcv"
+      ],
+      "workExperience": [
+        {
+          "place": "cvccv",
+          "position": "Junior Developer",
+          "start": "2024-04-02",
+          "end": "2024-04-03"
+        },
+        {
+          "place": "cvcv",
+          "position": "Senior Developer",
+          "start": "2024-04-09",
+          "end": "2024-06-21"
+        }
+      ]
+    },
+    {
+      "id": 446,
+      "name": "vcvvtgh",
+      "surname": "cvcvgh",
+      "birthDate": "2024-04-03",
+      "mobile": "233-233",
+      "address": {
+        "city": "trgghh",
+        "street": "hghgh"
+      },
+      "skills": [
+        "dfdffg",
+        "fgfg",
+        "kjkj",
+        "jkkjk"
+      ],
+      "workExperience": [
+        {
+          "place": "ffgg",
+          "position": "Senior Developer",
+          "start": "2024-04-03",
+          "end": "2024-04-24"
+        },
+        {
+          "place": "dfdf",
+          "position": "Tech Team Lead",
+          "start": "2024-04-03",
+          "end": "2024-05-01"
+        }
+      ]
+    },
+    {
+      "id": 298,
+      "name": "gffgf",
+      "surname": "gggfgg",
+      "birthDate": "2024-04-05",
+      "mobile": "124-445",
+      "address": {
+        "city": "gh",
+        "street": "bnnb"
+      },
+      "skills": [
+        "bnn",
+        "gg"
+      ],
+      "workExperience": [
+        {
+          "place": "nbn",
+          "position": "Select Position",
+          "start": "2024-04-17",
+          "end": "2024-04-30"
+        }
+      ]
+    }
+  ]
+}

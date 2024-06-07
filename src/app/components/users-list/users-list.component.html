@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="table">
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>BirthDate</th>
+        <th>Mobile</th>
+        <th></th>
+      </tr>
+      @for(user of (users$ | async); track user.id; let i = $index;) {
+      <tr [ngStyle]="{ backgroundColor: i % 2 === 1 ? '#EDEDED' : '#fff' }">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.surname }}</td>
+        <td>{{ user.birthDate }}</td>
+        <td>{{ user.mobile }}</td>
+        <td>
+          <button class="edit-btn" [routerLink]="['/create-edit', user.id]">
+            Edit
+          </button>
+          <button class="delete-btn" (click)="delete(user.id)">Delete</button>
+        </td>
+      </tr>
+      } @empty {
+      <tr>
+        <td colspan="7">Users list is empty</td>
+      </tr>
+      }
+    </table>
+  </div>
+  <button class="create-btn" routerLink="/create-edit">Create User</button>
+</div>

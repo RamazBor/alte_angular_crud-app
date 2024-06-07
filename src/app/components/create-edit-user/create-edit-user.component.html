@@ -1,0 +1,160 @@
+<div class="content">
+  <div class="form">
+    <div>
+      @if(user$ | async; as user) {
+      <h1>
+        Edit User <span>{{ user?.name }}</span>
+      </h1>
+      } @else {
+      <h1>Create User</h1>
+      }
+    </div>
+    <form [formGroup]="form">
+      <div class="form-field">
+        <input type="text" formControlName="name" placeholder="Name" />
+        @if(form.get('name')?.hasError('required') && form.get('name')?.touched)
+        {
+        <div class="error">Name is required!</div>
+        } @if(form.get('name')?.hasError('minlength')) {
+        <div class="error">Name must be at least 5 characters long.</div>
+        }
+      </div>
+
+      <div class="form-field">
+        <input type="text" formControlName="surname" placeholder="Surname" />
+        @if(form.get('surname')?.hasError('required') &&
+        form.get('surname')?.touched) {
+        <div class="error">Surname is required!</div>
+        } @if(form.get('surname')?.hasError('minlength')) {
+        <div class="error">Surname must be at least 6 characters long.</div>
+        }
+      </div>
+
+      <div class="form-field">
+        <input
+          type="text"
+          formControlName="birthDate"
+          placeholder="BirthDate"
+          onfocus="(this.type='date')"
+        />
+        @if(form.get('birthDate')?.hasError('required') &&
+        form.get('birthDate')?.touched) {
+        <div class="error">BirthDate is required!</div>
+        }
+      </div>
+
+      <div class="form-field">
+        <input
+          type="tel"
+          formControlName="mobile"
+          placeholder="Mobile 111-111"
+        />
+        @if(form.get('mobile')?.hasError('required') &&
+        form.get('mobile')?.touched) {
+        <div class="error">Mobile is required!</div>
+        } @if(form.get('mobile')?.value !== null &&
+        form.get('mobile')?.hasError('pattern')) {
+        <div class="error">Invalid phone number!</div>
+        }
+      </div>
+
+      <div class="form-field address" formGroupName="address">
+        <div class="form-field city">
+          <input
+            type="text"
+            formControlName="city"
+            placeholder="City address"
+          />
+          @if(form.get('address.city')?.hasError('required') &&
+          form.get('address.city')?.touched) {
+          <div class="error">City Address is required!</div>
+          }
+        </div>
+        <div class="form-field street">
+          <input
+            type="text"
+            formControlName="street"
+            placeholder="Street address"
+          />
+          @if(form.get('address.street')?.hasError('required') &&
+          form.get('address.street')?.touched) {
+          <div class="error">Street Address is required!</div>
+          }
+        </div>
+      </div>
+
+      <div class="form-field-skills" formArrayName="skills">
+        <h4>Add Skills</h4>
+        @for(skill of form.get('skills')?.value;let i = $index; track i) {
+        <div class="skill">
+          <input type="text" placeholder="Add Skill..." [formControlName]="i" />
+          <button type="button" class="delete-btn" (click)="deleteSkill(i)">
+            Delete
+          </button>
+        </div>
+        }
+        <button type="button" class="btn-add-skill" (click)="addSkill()">
+          Add Skill
+        </button>
+      </div>
+
+      <div class="form-field-work-experience" formArrayName="workExperience">
+        @for(exp of form.get('workExperience')?.value; let i = $index; track i)
+        {
+        <div class="work-experience" [formGroupName]="i">
+          <label>Experience {{ i + 1 }}</label
+          ><br />
+          <div class="company-and-position">
+            <input
+              type="text"
+              placeholder="Company Name"
+              formControlName="place"
+            />
+            <div class="column">
+              <div class="select-box">
+                <select formControlName="position">
+                  <option [ngValue]="null" disabled hidden>
+                    Select Position
+                  </option>
+                  @for(position of positions; track position; let i = $index) {
+                  <option [ngValue]="position">
+                    {{ position }}
+                  </option>
+                  }
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <input
+              type="text"
+              placeholder="Start Date"
+              onfocus="(this.type='date')"
+              formControlName="start"
+            />
+            <input
+              type="text"
+              placeholder="End Date"
+              onfocus="(this.type='date')"
+              formControlName="end"
+            />
+          </div>
+          <button
+            type="button"
+            class="delete-btn"
+            (click)="deleteExperience(i)"
+          >
+            Delete Experience
+          </button>
+        </div>
+        }
+        <button type="button" class="add-btn" (click)="addExperience()">
+          Add Experience
+        </button>
+      </div>
+
+      <button class="submit-btn" (click)="onSubmit()">Save</button>
+    </form>
+    <button class="users-list" routerLink="/">Users List</button>
+  </div>
+</div>
